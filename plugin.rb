@@ -3,6 +3,9 @@
 # version: 0.3
 # authors: Arpit Jalan
 # url: https://github.com/discourse/discourse-watch-category-mcneel
+#
+# "everyone" makes every user watch the listed categories
+# "everyone" => [ "announcements" ]
 
 module ::WatchCategory
 
@@ -27,8 +30,6 @@ module ::WatchCategory
       "dhi-b-2019-cohort" => [ ["private", "dhi-b-2019-cohort"] ],
       "chairs" => [ ["private", "chairs"] ],
       "facdevcenters" => [ ["private", "facdevcenters"] ]
-      # "everyone" makes every user watch the listed categories
-      # "everyone" => [ "announcements" ]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
 
