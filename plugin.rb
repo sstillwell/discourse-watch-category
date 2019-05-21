@@ -27,7 +27,7 @@ module ::WatchCategory
       # "amical-2019-joint-org" => [ ["private", "amical-2019-joint-org"] ],
       # "amical-2019-program-cmte" => [ ["private", "amical-2019-program-cmte"] ],
       "amical-2020-joint-org" => [ ["private", "amical-2020-joint-org"] ],
-      "amical-2020-program-cmte" => [ ["private", "amical-2020-program-cmte"] ],
+      # "amical-2020-program-cmte" => [ ["private", "amical-2020-program-cmte"] ],
       "dhsi-2018-cohort" => [ ["private", "dhsi-2018-cohort"] ],
       "dhi-b-2019-cohort" => [ ["private", "dhi-b-2019-cohort"] ],
       "chairs" => [ ["private", "chairs"] ],
