@@ -3,15 +3,15 @@
 # version: 0.3
 # authors: Arpit Jalan
 # url: https://github.com/discourse/discourse-watch-category-mcneel
-#
-# "everyone" makes every user watch the listed categories
-# "everyone" => [ "announcements" ]
+
 
 module ::WatchCategory
 
   def self.watch_category!
     groups_cats = {
       # "group" => ["category", "another-top-level-category", ["parent-category", "sub-category"] ],
+      # "everyone" makes every user watch the listed categories
+      # "everyone" => [ "announcements" ]
       "coordinating-cmte" => [ ["private", "coordinating-committee"] ],
       "digcol-cmte" => [ ["private", "digital-collections-committee"] ],
       "digped-cmte" => [ ["private", "digital-pedagogy-committee"] ],
@@ -22,12 +22,12 @@ module ::WatchCategory
       "oclc-cmte" => [ ["private", "oclc-programs-committee"] ],
       "profdev-cmte" => [ ["private", "professional-development-committee"] ],
       "grant-review-cmte" => [ ["private", "grant-review-cmte"] ],
-      # "amical-2018-joint-org" => [ ["private", "amical-2018-joint-org"] ],
-      # "amical-2018-program-cmte" => [ ["private", "amical-2018-program-cmte"] ],
-      # "amical-2019-joint-org" => [ ["private", "amical-2019-joint-org"] ],
-      # "amical-2019-program-cmte" => [ ["private", "amical-2019-program-cmte"] ],
+      "amical-2018-joint-org" => [ ["private", "amical-2018-joint-org"] ],
+      "amical-2018-program-cmte" => [ ["private", "amical-2018-program-cmte"] ],
+      "amical-2019-joint-org" => [ ["private", "amical-2019-joint-org"] ],
+      "amical-2019-program-cmte" => [ ["private", "amical-2019-program-cmte"] ],
       "amical-2020-joint-org" => [ ["private", "amical-2020-joint-org"] ],
-      # "amical-2020-program-cmte" => [ ["private", "amical-2020-program-cmte"] ],
+      "amical-2020-program-org" => [ ["private", "amical-2020-program-org"] ],
       "dhsi-2018-cohort" => [ ["private", "dhsi-2018-cohort"] ],
       "dhi-b-2019-cohort" => [ ["private", "dhi-b-2019-cohort"] ],
       "chairs" => [ ["private", "chairs"] ],
