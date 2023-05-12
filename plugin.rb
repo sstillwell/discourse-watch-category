@@ -11,7 +11,7 @@ module ::WatchCategory
       # 'group' => ['category', 'another-top-level-category', ['parent-category', 'sub-category']],
       # 'everyone' makes every user watch the listed categories
       # 'everyone' => ['announcements']
-      'betausers' => [['private-forums', 'version-3-0-beta-forum-invitation-only']]
+      'betausers' => [['private-forums', 'version-3-0-beta-forum-invitation-only'], ['private-forums', 'version-4-0-beta']]
     }
     WatchCategory.change_notification_pref_for_group(groups_cats, :watching)
 
